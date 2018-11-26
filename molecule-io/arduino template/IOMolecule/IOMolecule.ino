@@ -10,7 +10,6 @@
 
 #include <Servo.h>
 #include <Adafruit_NeoPixel.h>
-#include "pitches.h"
 
 
 // connectors
@@ -32,10 +31,9 @@
 
 
 
-#define NUMPIXELS 16    // number of NEOPIXELS 
+#define NUMPIXELS 16    // number of NEOPIXELS
 
 
-Serial serial;
 Servo servo;
 Adafruit_NeoPixel neopixels = Adafruit_NeoPixel(NUMPIXELS, NEOPIXELS, NEO_GRB + NEO_KHZ800);
 
@@ -48,11 +46,10 @@ void setup() {
   pinMode(LED2, OUTPUT);
   pinMode(MOTOR, OUTPUT);
 
-  Serial.begin(9600);
 }
 
 void loop() {
 
-  
+
 
 }

@@ -24,8 +24,8 @@
 
 // on-board components
 #define TONE      5
-#define PUSH1     0
-#define PUSH2     1
+#define PUSH1     1
+#define PUSH2     0
 #define TURN1     A1
 #define TURN2     A0
 
@@ -52,6 +52,7 @@ void setup() {
 
 void loop() {
 
-
+  int ledValue = map(analogRead(TURN1), 0, 1023, 0, 255);
+  analogWrite(LED1, ledValue);
 
 }

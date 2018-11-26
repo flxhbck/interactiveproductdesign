@@ -46,6 +46,8 @@ void setup() {
   pinMode(LED2, OUTPUT);
   pinMode(MOTOR, OUTPUT);
 
+  pinMode(PUSH1, INPUT_PULLUP);
+  pinMode(PUSH2, INPUT_PULLUP);
 }
 
 void loop() {
